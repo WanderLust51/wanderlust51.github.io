@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+}
+
+#banner{
+    display: flex;
+    background-color: #000020;
+    height: 700px;
+    align-items: center;
+    padding-left: 12%;
+}
+
+title{
+    display: flex;
+    align-items: center;
+}
+
+#bannerTitle{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #effbee;
+    text-align: left;
+    font-size: 80px;
+    transition-duration: 0.3s;
+}
+
+#bannerTitle:hover{
+    font-size: 90px;
+    color: rgb(199, 199, 255);
+    transition-duration: 0.3s;
+}
+
+.lightText{
+
+    position: absolute;
+    top: 650px;
+    left: 44%;
+    color: rgba(255, 255, 255, 0.185);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
