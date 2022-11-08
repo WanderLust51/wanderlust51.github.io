@@ -1,10 +1,11 @@
 body{
     margin: 0px;
+    background-color: #100e1a;
 }
 
 #banner{
     display: flex;
-    background-color: #000020;
+    background-color: #19132a;
     height: 700px;
     align-items: center;
     padding-left: 12%;
@@ -20,22 +21,95 @@ title{
     font-family: 'Lato', sans-serif;
     color: #effbee;
     text-align: left;
-    font-size: 80px;
+    font-size: 70px;
+    font-weight:bold;
     transition-duration: 0.3s;
 }
 
 #bannerTitle:hover{
-    font-size: 90px;
+    font-size: 80px;
     color: rgb(199, 199, 255);
     transition-duration: 0.3s;
 }
 
 .lightText{
-
     position: absolute;
     top: 650px;
     left: 44%;
     color: rgba(255, 255, 255, 0.185);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+}
+
+main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contentLeft{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 50%;
+    
+}
+.contentRight{
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    width: 50%;
+}
+
+.contentLine{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.textRegular{
+    color: #effbee;
+    display: flex;
+    font-size: 30px;
+    transition-duration: 0.3s;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+.textRegular:hover{
+    color: rgb(199, 199, 255);
+    transition-duration: 0.3s;
+}
+
+.textRed{
+    display: flex;
+    color: rgb(199, 62, 62);
+}
+
+
+.textSubTitle{
+    color: #effbee;
+    display: flex;
+    font-size: 40px;
+    transition-duration: 0.3s;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.img1{
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.img1:hover{
+    width: 320px;
+    height: 320px;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 150px 0px rgba(255, 255, 255, 0.322);
 }
