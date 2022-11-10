@@ -1,0 +1,86 @@
+.neonBox{
+    background-color: rgba(168, 169, 255, 0.034);
+
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(199, 199, 255, 0.233);
+
+    transition-duration: 0.8s;
+}
+
+.neonBox:hover{
+    background-color: rgba(168, 169, 255, 0.068);
+    border-color: rgba(206, 206, 250, 0.685);
+    box-shadow: 0 0 70px 0 rgba(199, 199, 255, 0.192);
+    
+    animation-name: neonFx;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+    transition-duration: 0.8s;
+
+}
+@keyframes neonFx{
+    0% {box-shadow: 0 0 70px 0 rgba(199, 199, 255, 0.192);}
+    50% {box-shadow: 0 0 100px 0 rgba(199, 199, 255, 0.322);}
+    100% {box-shadow: 0 0 70px 0 rgba(199, 199, 255, 0.192);}
+}
+
+#cvImg{
+    display: flex;
+    height: 220px;
+    width: 220px;
+    margin-left: 10%;
+    border-radius: 50%
+}
+
+.cvContent{
+    display: block;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15%;
+
+}
+
+#cvContentRight{
+    text-align: -webkit-center;
+}
+
+#cvUnderline{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #effbee;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+
+.cvButton{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #effbee;
+    height: 58px;
+    width: 170px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    border-color: #fdff6b9f;
+    border-width: 2px;
+    border-style: solid;
+    transition-duration: 0.3s;
+}
+
+.cvButton:hover{
+    background-color: #fbff0088;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 70px #fbff0046;
+}

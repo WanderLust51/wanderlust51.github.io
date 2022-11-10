@@ -1,14 +1,22 @@
+html{scroll-behavior: smooth}
+
 body{
     margin: 0px;
     background-color: #100e1a;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+}
+
 #banner{
     display: flex;
     background-color: #19132a;
-    height: 700px;
+    height: 600px;
     align-items: center;
     padding-left: 12%;
+    padding-bottom: 100px;
 }
 
 title{
@@ -32,10 +40,12 @@ title{
     transition-duration: 0.3s;
 }
 
-.lightText{
+#lightCont1{
     position: absolute;
     top: 650px;
     left: 44%;
+}
+#bajaMasText{
     color: rgba(255, 255, 255, 0.185);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -43,7 +53,9 @@ title{
 
 main{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 11%;
 }
 .contentLeft{
     display: flex;
@@ -62,10 +74,11 @@ main{
 .contentLine{
     display: flex;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 15%;
+    padding-left: 6%;
+    padding-right: 7%;
     padding-top: 80px;
     padding-bottom: 130px;
+    scroll-margin-top: 17ex;
 }
 
 .textRegular{
@@ -113,3 +126,46 @@ main{
     transition-duration: 0.3s;
     box-shadow: 0 0 150px 0px rgba(255, 255, 255, 0.322);
 }
+
+#lightCont2{
+    justify-content: center;
+    display: flex;
+    top: 650px;
+    left: 44%;
+    color: rgba(255, 255, 255, 0.185);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#gotoTopCont{
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+    bottom: 100%;
+    position:relative;
+}
+
+.gotoTop{
+    align-items: center;
+    justify-content: center;
+    color: #effbee;
+    font-size: 25px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: #effbee;
+    border-width: 2px;
+    border-style: solid;
+    
+    margin-bottom: 30px;
+
+    transition-duration: 0.2s;
+}
+.gotoTop:hover{
+    background-color: #c7c7ff1a;
+    border-color: #c7c7ffde;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 60px -10px #c7c7ffda;
+}
+

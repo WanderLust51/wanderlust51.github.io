@@ -1,0 +1,67 @@
+footer{
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-color: #19132a;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+}
+
+.contentFooter{
+    display: flex;
+    justify-content:left;
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.textSubTitleFooter{
+    color: #effbee;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    justify-content: left;
+    text-align: start;
+
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #effbee;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+
+.textRegularFooter{
+    color: #effbee;
+    display: flex;
+    font-size: 25px;
+    padding-bottom: 30px;
+    padding-left: 2%;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.contentFooterLeft{
+    width: 300px;
+    display: block;
+    margin-right: 2%;
+}
+
+.contentFooterRight{
+    width: 600px;
+    display: block;
+    margin-right: 2%;
+}
+
+#linkedinLink{
+    text-decoration: none;
+}
+
+#linkedinText{
+    transition-duration: 0.3s;
+}
+
+#linkedinText:hover{
+    color: #c7c7ffda;
+    transition-duration: 0.3s;
+}
