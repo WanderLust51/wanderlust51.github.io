@@ -83,16 +83,16 @@ main{
 
 .textRegular{
     color: #effbee;
-    display: flex;
+    display: block;
     font-size: 30px;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     text-align: center;
 }
 .textRegular:hover{
     color: rgb(199, 199, 255);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 .textRed{
@@ -169,3 +169,7 @@ main{
     box-shadow: 0 0 60px -10px #c7c7ffda;
 }
 
+#colorWord{
+    color: rgb(73, 156, 73);
+    display: inline-flex;
+}
