@@ -122,6 +122,29 @@
 
     </footer>
 
+    <script>
+        function superRandom(min, max){
+            return Math.floor((Math.random() * (max - min + 1)) + min);
+        }
+        let theLove = ['¯\\_(ツ)_/¯','♡‿♡','X  ͜&nbsp&nbsp&nbsp&nbspX','( ͡° ͜ʖ ͡°)','\ (•◡•) /','♡ⓛⓞⓥⓔ♡','^.~','❤!','ඞ','｡◕‿◕｡','( •̀ᴗ•́ )و ̑̑'];
+        let theLife = ['do it 4 the mustang','♡black mustang♡','♡white mustang♡','♡old mustang♡','♡red mustang♡','♡blue mustang♡','♡wine mustang♡'];
+        
+        let world = [];
+
+        for (love in theLove){
+            world.push(theLove[love]);
+        }
+        for (things in theLife){
+            world.push(theLife[things]);
+        }
+
+        let theNumber = superRandom(0, (world.length -1));
+        let theDiv = document.getElementById('shrug');
+        theDiv.innerHTML = world[theNumber];
+        console.log(`time for Nº ${theNumber + 1}.`);
+    </script>
+
+
 </body>
 </html>
 
