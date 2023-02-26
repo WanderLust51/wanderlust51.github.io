@@ -13,20 +13,28 @@ a{
 #banner{
     display: flex;
     background-color: #19132a;
-    height: 600px;
-    align-items: center;
-    padding-left: 12%;
-    padding-bottom: 100px;
+    height: 85vh;
+    justify-content: center;
+    width: 100%;
+    /* padding-bottom: 100px; */
+    /* background-color: rgba(255, 255, 255, 0.171); */
 }
+#bannerContent{
+    width: 78%;
+    margin-top: 25vh;
+    height: fit-content;
+    /* background-color: rgba(255, 255, 255, 0.171); */
 
-title{
-    display: flex;
-    align-items: center;
+}
+#title{
+    height: fit-content;
+    /* background-color: rgba(255, 255, 255, 0.541); */
 }
 
 #bannerTitle{
     display: block;
     font-family: 'Lato', sans-serif;
+    margin: 0;
     color: #effbee;
     text-align: left;
     font-size: 70px;
@@ -38,12 +46,14 @@ title{
     font-size: 80px;
     color: rgb(199, 199, 255);
     transition-duration: 0.3s;
+    letter-spacing: 3px;
 }
 
 #lightCont1{
-    position: absolute;
-    top: 650px;
-    left: 44%;
+    position: relative;
+    text-align: center;
+    top: -60px;
+
 }
 #bajaMasText{
     color: rgba(255, 255, 255, 0.185);
@@ -51,11 +61,14 @@ title{
     font-size: 20px;
 }
 
+/* - - - - - - BANNER - - - - - - */
+/*  - - - - - - BODY - - - - - -  */
+
 main{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 40px;
-    padding-left: 10%;
-    padding-right: 11%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 .contentLeft{
     display: flex;
@@ -76,8 +89,8 @@ main{
     justify-content: center;
     padding-left: 6%;
     padding-right: 7%;
-    padding-top: 80px;
-    padding-bottom: 130px;
+
+    height: 290px;
     scroll-margin-top: 17ex;
 }
 
@@ -104,16 +117,18 @@ main{
 .textSubTitle{
     color: #effbee;
     display: flex;
+    margin: 100px 0 50px 0;
     font-size: 40px;
     transition-duration: 0.3s;
     font-family: 'Lato', sans-serif;
+    font-weight: lighter;
     justify-content: center;
     text-align: center;
 }
 
 .img1{
     display: flex;
-    position: absolute;
+    position: static;
     width: 280px;
     height: 280px;
     border-radius: 10px;
@@ -170,6 +185,114 @@ main{
 }
 
 #colorWord{
+    display: inline-flex;
+    transition-duration: 0.15s;
+}
+p:hover > #colorWord{
     color: rgb(73, 156, 73);
     display: inline-flex;
+    transition-duration: 0.2s;
+}
+
+
+/* - - - - -RESPONSIVE - - - - - - -*/
+/* - - - - - RESPONSIVE - - - - - - */
+/* - - - - - -RESPONSIVE - - - - - -*/
+/* - - - - - - RESPONSIVE - - - - - */
+/* - - - - - - -RESPONSIVE - - - - -*/
+/* - - - - - - - RESPONSIVE - - - - */
+
+
+/* 700px */
+@media screen and (max-width: 700px){
+    
+    #bannerContent{
+        display: block;
+        width: 100%;
+        
+    }
+    #title{
+        display: block;
+        width: 100%;
+    }
+    #title > h1{
+        font-size: 60px;
+
+    }
+    #title > h1{
+        text-align: center;
+    }
+    nav{
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    #laptop{
+        display: none;
+    }
+    
+    main{
+        padding-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contentLine{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .contentLine > div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .contentLine > div p{
+        width: 90%;
+    }
+
+    #aboutMeSection > .contentLeft{
+        margin-bottom: 30px;
+    }
+}
+
+/* 485px */
+@media screen and (max-width: 485px){
+    #banner{
+        height: fit-content;
+    }
+    #bannerContent{
+        margin-top: 15vh;
+        width: 90%;
+    }
+    #title{
+        margin-bottom: 10vh;
+    }
+    #title > h1:first-child{
+        font-size: 70px;
+    }
+    #title > h1:last-child{
+        font-size: 40px;
+    }
+    #bannerTitle:hover{
+        font-size: inherit;
+        color: rgb(199, 199, 255);
+        letter-spacing: 0px;
+        transition-duration: 0.3s;
+    }
+}
+
+/* 860px */
+@media screen and (max-width: 860px){
+    main{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #bannerContent{
+        width: 85%;
+    }
 }

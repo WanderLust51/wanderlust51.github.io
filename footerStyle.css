@@ -12,7 +12,6 @@ footer{
     justify-content:left;
     padding-left: 10%;
     padding-right: 7%;
-    padding-top: 40px;
     padding-bottom: 60px;
 }
 
@@ -31,30 +30,32 @@ footer{
     text-underline-offset: 10px;
 }
 
-.textRegularFooter{
+.contentFooter p, .contentFooter a{
     color: #effbee;
     display: flex;
     font-size: 25px;
-    padding-bottom: 30px;
-    padding-left: 2%;
+    margin: 50px 0;
+    /* padding-bottom: 30px; */
+    /* padding-left: 2%; */
     font-weight: lighter;
     text-align: left;
 }
 
 .contentFooterLeft{
-    width: 300px;
+    width: 360px;
     display: block;
-    margin-right: 2%;
+    margin-right: 3%;
 }
 
 .contentFooterRight{
-    width: 600px;
+    width: 100%;
     display: block;
     margin-right: 2%;
 }
 
 #linkedinLink{
     text-decoration: none;
+    color: rgb(199, 199, 255);;
 }
 
 #linkedinText{
@@ -64,4 +65,43 @@ footer{
 #linkedinText:hover{
     color: #c7c7ffda;
     transition-duration: 0.3s;
+}
+
+/* - - - - -RESPONSIVE - - - - - - -*/
+/* - - - - - RESPONSIVE - - - - - - */
+/* - - - - - -RESPONSIVE - - - - - -*/
+/* - - - - - - RESPONSIVE - - - - - */
+/* - - - - - - -RESPONSIVE - - - - -*/
+/* - - - - - - - RESPONSIVE - - - - */
+
+#fcontent2{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    footer{
+        height: fit-content;
+    }
+    #contactMeSection{
+        padding-bottom: 20px;
+    }
+    #fcontent1{
+        display: none;
+    }
+    #fcontent2{
+        display: block;
+    }
+    .contentFooter p, .contentFooter a{
+        color: #effbee;
+        display: flex;
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: lighter;
+        text-align: left;
+    }
+    .contentFooter > div{
+        margin: 40px 0;
+    }
+    .contentFooter > div > *:last-child{
+        margin-left: 20px;
+    }
 }

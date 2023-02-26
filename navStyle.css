@@ -1,46 +1,68 @@
 nav{
-    display: flex;
-    top: 460px;
-    position: absolute;
-    width: 500px;
+  display: flex;
+  margin-top: 5vh;
+  /* position: static; */
+  width: fit-content;
+  /* height: 50px; */
+}
+nav > a{
+  display: inline-block;
+}
+nav > a > div{
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #effbee;
+  height: 58px;
+  width: 130px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  border-color: #effbee7a;
+  border-width: 2px;
+  border-style: solid;
+  margin: 0 13px;
+  transition-duration: 0.3s;
 }
 
-.navOption{
-    display: flex;
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #effbee;
-    height: 58px;
-    width: 130px;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 4px;
-    border-color: #effbee7a;
-    border-width: 2px;
-    border-style: solid;
-    margin-right: 26px;
-    transition-duration: 0.3s;
-}
-
-.navOption:hover{
-    color: rgb(199, 199, 255);
-    font-size: 25px;
-    transition-duration: 0.3s;
+nav > a > div:hover{
+  color: rgb(199, 199, 255);
+  font-size: 25px;
+  transition-duration: 0.3s;
 }
 
 .shaker:hover {
-    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+  
+@keyframes shake {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
-  
-  @keyframes shake {
-    10%, 90% {transform: translate3d(-1px, 0, 0);}
-    
-    20%, 80% {transform: translate3d(2px, 0, 0);}
-  
-    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);}
+}
+
+@media screen and (max-width: 485px){
+    nav{
+      display: block;
+      margin-bottom: 10vh;
     }
+    nav > a{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      /* background-color: rgba(255, 255, 255, 0.096); */
+    }
+    nav > a > div{
+      width: 80vw;
+      margin: 10px 0;
+    }
+}

@@ -20,62 +20,65 @@
 <body>
     
     <div id="banner">
-        <div id="title">
-            <span id="bannerTitle">Hola,<br></span>
-            <span id="bannerTitle">yo soy Andrés.</span>
+        <div id="bannerContent">
+            
+            <div id="title">
+                <h1 id="bannerTitle">Hola,<br></h1>
+                <h1 id="bannerTitle">yo soy Andrés.</h1>
+            </div>
+            
+            
+            <nav>
+                <a href="#aboutMeSection"><div>Sobre mí</div></a>
+                <a class="shaker"><div>Proyectos</div></a>
+                <a href="#contactMeSection"><div>Contacto</div></a>
+            </nav>
         </div>
-        
+            
         <div id="laptop">
-            <div id="camera"></div>
+            <div id="camera"><div id="cameraHitBox"></div><div id="band"><div id="band2"></div></div></div>
             <div id="screenOff"></div>
             <div id="screenOn"><div id="shrug">¯\_(ツ)_/¯</div></div>
-        </div>
-        
-        <nav>
-            <a href="#aboutMeSection"><div class="navOption">Sobre mí</div></a>
-            <div class="shaker"><div class="navOption">Proyectos</div></div>
-            <a href="#contactMeSection"><div class="navOption">Contacto</div></a>
-        </nav>
-
-        <div id="lightCont1"> <span id="bajaMasText">︾ baja más ︾</span></div>
-
+        </div>    
     </div>
+    <div id="lightCont1"> <p id="bajaMasText">︾ baja más ︾</p></div>
 
     <main>
 
         <div class="contentLine" id="aboutMeSection">
             <div class="contentLeft">
-                <span class="textRegular">Soy un estudiante de programación y apasionado de lo que esta es capaz de hacer. Disfruto de resolver problemas lógicos y de ver el resultado de estos mismos.</span>
+                <p class="textRegular">Soy un estudiante de programación y apasionado de lo que esta es capaz de hacer. Disfruto de resolver problemas lógicos y de ver el resultado de estos mismos.</p>
             </div>
             <div class="contentRight">
                 <img src="./imgs/img1.png" alt="" class="img1">
             </div>
         </div>
 
-        
-        <div class="neonBox">
-            <img src="imgs/CVpic.png" alt="" id="cvImg">
-
-            <div class="cvContent">
-                <div id="cvContentRight">
-
-                    <div id="cvUnderline"><span class="textSubTitle">Curriculum Vitae</span></div> <br><br><br>
-                    <a href="Curriculum Vitae.pdf" target="_blank"><div class="cvButton">Ver Curriculum!</div></a>
-
+        <div id="neonContainer">
+            <div class="neonBox">
+                <div><img src="imgs/CVpic.png" alt="" id="cvImg"></div>
+                
+                <div class="cvContent">
+                    <div id="cvContentRight">
+                        
+                        <h1 id="cvUnderline">Curriculum Vitae</h1>
+                        <a href="Curriculum Vitae.pdf" target="_blank"><div class="cvButton">Ver Curriculum!</div></a>
+                        
+                    </div>
                 </div>
             </div>
         </div>
+            
 
 
-
-        <div class="contentLine"><span class="textSubTitle">Habilidades</span></div>
+        <h1 class="textSubTitle">Habilidades</h1>
 
         <div class="contentLine">
             <div class="contentLeft">
                 <img src="./imgs/htmlcss.png" alt="" class="img1">
             </div>
             <div class="contentRight">
-                <span class="textRegular">Tengo conocimiento academico de html5 y css3 cuyas bases están demostradas en esta página web creada y diseñada por mí mismo.</span>
+                <p class="textRegular">Tengo conocimiento certificado de html5 y css3 cuyas bases están demostradas en esta página web creada y diseñada por mí mismo.</p>
             </div>
         </div>
 
@@ -95,22 +98,26 @@
 
     <footer>
         
-
         <div class="contentFooter" id="contactMeSection"><span class="textSubTitleFooter">Contáctame</span></div>
 
-        <div class="contentFooter">
+        <div class="contentFooter" id="fcontent1">
             <div class="contentFooterLeft">
-                <span class="textRegularFooter">• Mi correo:</span>
-                <span class="textRegularFooter">• Número de telefono:</span>
-                <span class="textRegularFooter">• LinkedIn:</span>
+                <p>• Mi correo:</p>
+                <p>• Número de telefono:</p>
+                <p>• LinkedIn:</p>
             </div>
         
-        <div class="contentFooterRight">
-            <span class="textRegularFooter">andreslugo51@gmail.com</span>
-            <span class="textRegularFooter">+58-424-594-6661</span>
-            <a href="http://www.linkedin.com/in/andres-lugo-30a61324a/" id="linkedinLink" target="_blank"><span class="textRegularFooter" id="linkedinText">🔗 www.linkedin.com/in/andres-lugo-30a61324a/</span></a>
+            <div class="contentFooterRight">
+                <p>andreslugo51@gmail.com</p>
+                <p>+58-424-594-6661</p>
+                <a href="http://www.linkedin.com/in/andres-lugo-30a61324a/" id="linkedinLink" target="_blank"><span class="textRegularFooter" id="linkedinText">🔗 www.linkedin.com/in/andres-lugo-30a61324a/</span></a>
+            </div>
         </div>
-            
+
+        <div class="contentFooter" id="fcontent2">
+            <div><p>• Mi correo:</p><p>andreslugo51@gmail.com</p></div>
+            <div><p>• Número de telefono:</p><p>+58-424-594-6661</p></div>
+            <div><p>• LinkedIn:</p><a href="http://www.linkedin.com/in/andres-lugo-30a61324a/" id="linkedinLink" target="_blank"><span class="textRegularFooter" id="linkedinText">www.linkedin.com/in/andres-lugo-30a61324a/ 🔗 </span></a></div>
         </div>
 
     </footer>
