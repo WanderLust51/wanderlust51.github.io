@@ -1,8 +1,48 @@
+/* CLASES */
+.color-white{
+    color: #effbee;
+}
+.color-word{
+    display: inline-flex;
+    transition-duration: 0.1s;
+}
+p:hover > .hover-green{
+    color: rgb(73, 156, 73);
+    display: inline-flex;
+    transition-duration: 0.2s;
+}
+*:hover > .hover-white{
+    color: #effbee;
+    transition-duration: 0.1s;
+}
+*:hover > .hover-yellow{
+    color: #dbff59;
+    transition-duration: 0.1s;
+}
+*:hover > .hover-red{
+    color: #f75555;
+    transition-duration: 0.2s;
+}
+*:hover > .hover-blue{
+    color: #667ee7;
+    transition-duration: 0.2s;
+}
+
+div > .shiny-text{
+    transition-duration: 0.1s;
+}
+div:hover > .shiny-text{
+    text-shadow: 0 0 20px white;
+    transition-duration: 0.1s;
+}
+
 html{scroll-behavior: smooth}
 
 body{
     margin: 0px;
     background-color: #100e1a;
+    font-family: 'Lato', sans-serif;
+
 }
 
 a{
@@ -86,7 +126,7 @@ main{
 
 .contentLine{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 6%;
     padding-right: 7%;
 
@@ -152,6 +192,24 @@ main{
     font-size: 20px;
 }
 
+.skill-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill-grid > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.skill-grid > div > img{
+    height: 8rem;
+}
+
 #gotoTopCont{
     display: flex;
     justify-content: end;
@@ -182,16 +240,6 @@ main{
     border-color: #c7c7ffde;
     transition-duration: 0.2s;
     box-shadow: 0 0 60px -10px #c7c7ffda;
-}
-
-#colorWord{
-    display: inline-flex;
-    transition-duration: 0.15s;
-}
-p:hover > #colorWord{
-    color: rgb(73, 156, 73);
-    display: inline-flex;
-    transition-duration: 0.2s;
 }
 
 
