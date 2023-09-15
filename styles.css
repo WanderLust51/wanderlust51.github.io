@@ -27,6 +27,10 @@ p:hover > .hover-green{
     color: #667ee7;
     transition-duration: 0.2s;
 }
+*:hover > .hover-blue1{
+    color: #2D79C7;
+    transition-duration: 0.2s;
+}
 
 div > .shiny-text{
     transition-duration: 0.1s;
@@ -105,8 +109,7 @@ a{
 /*  - - - - - - BODY - - - - - -  */
 
 main{
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding: 2rem 0;   
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -129,6 +132,7 @@ main{
     justify-content: space-between;
     padding-left: 6%;
     padding-right: 7%;
+    margin: 4rem 0;
 
     height: 290px;
     scroll-margin-top: 17ex;
