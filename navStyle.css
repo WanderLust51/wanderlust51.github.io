@@ -52,7 +52,7 @@ nav > a > div:hover{
 @media screen and (max-width: 485px){
     nav{
       display: block;
-      margin-bottom: 10vh;
+      margin-bottom: 2vh;
     }
     nav > a{
       display: flex;

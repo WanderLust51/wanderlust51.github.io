@@ -68,7 +68,18 @@ a{
     margin-top: 25vh;
     height: fit-content;
     /* background-color: rgba(255, 255, 255, 0.171); */
+}
+#social{
+    display: flex;
+    margin-top: 2rem;
+    & > a{
+        color: white;
+        padding: 0 0.75rem;
 
+        & > ion-icon{
+            font-size: 1.5rem;
+        }
+    }
 }
 #title{
     height: fit-content;
@@ -156,7 +167,6 @@ main{
     display: flex;
     color: rgb(199, 62, 62);
 }
-
 
 .textSubTitle{
     color: #effbee;
@@ -258,6 +268,13 @@ main{
 /* 700px */
 @media screen and (max-width: 700px){
     
+    #social{
+        justify-content: center;
+        margin-top: 6vh;
+        & > a{
+            padding: 0 1.75rem;
+        }
+    }
     #bannerContent{
         display: block;
         width: 100%;
@@ -314,6 +331,11 @@ main{
 
 /* 485px */
 @media screen and (max-width: 485px){
+
+    #social{
+        margin-top: 4vh;
+        margin-bottom: 8vh;
+    }
     #banner{
         height: fit-content;
     }
@@ -335,6 +357,9 @@ main{
         color: rgb(199, 199, 255);
         letter-spacing: 0px;
         transition-duration: 0.3s;
+    }
+    #bajaMasText{
+        display: none;
     }
 }
 

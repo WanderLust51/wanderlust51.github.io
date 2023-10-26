@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="navStyle.css">
     <link rel="stylesheet" href="curriculumBox.css">
     <link rel="stylesheet" href="footerStyle.css">
+    <link rel="stylesheet" href="projectStyle.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
     
@@ -30,9 +33,15 @@
             
             <nav>
                 <a href="#aboutMeSection"><div>Sobre mí</div></a>
-                <a class="shaker"><div>Proyectos</div></a>
+                <a href="#projectsSection"><div>Proyectos</div></a>
                 <a href="#contactMeSection"><div>Contacto</div></a>
             </nav>
+
+            <span id="social">
+                <a href="https://github.com/WanderLust51" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="http://www.linkedin.com/in/andrés-lugo-30a61324a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.instagram.com/andreslugo_wl/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </span>
         </div>
             
         <div id="laptop">
@@ -69,6 +78,32 @@
             </div>
         </div>
             
+        <div id="projectsSection">
+            <h1 class="textSubTitle">Proyectos</h1>
+
+            <div id="project-container">
+
+                <!-- <div class="project">
+                    <img src="imgs/todo.png" alt="">
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Amazing Caption</h1>
+                            <p>Whatever It Is - Always Awesome</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div> -->
+            </div>
+
+        </div>
 
 
         <h1 class="textSubTitle">Habilidades</h1>
@@ -163,11 +198,13 @@
 
     </footer>
 
+    <script src="projects.js"></script>
+
     <script>
         function superRandom(min, max){
             return Math.floor((Math.random() * (max - min + 1)) + min);
         }
-        let theLove = ['¯\\_(ツ)_/¯','♡‿♡','¡ ♡‿♡ !','X  ͜&nbsp&nbsp&nbsp&nbspX','( ͡° ͜ʖ ͡°)','\\ (•◡•) /','♡ⓛⓞⓥⓔ♡','^.~','❤!','ඞ','｡◕‿◕｡','( •̀ᴗ•́ )و ̑̑'];
+        let theLove = ['¯\\_(ツ)_/¯','♡‿♡','¡ ♡‿♡ !','X  ͜&nbsp&nbsp&nbsp&nbspX','( ͡° ͜ʖ ͡°)','\\ (•◡•) /','♡ⓛⓞⓥⓔ♡','^.~','❤!','ඞ','｡◕‿◕｡','\\( •̀ᴗ•́ )و ̑̑'];
         let theLife = ['do it 4 the mustang','♡black mustang♡','♡white mustang♡','♡old mustang♡','♡red mustang♡','♡blue mustang♡','♡wine mustang♡'];
         
         let world = [];
@@ -185,6 +222,9 @@
         console.log(`time for Nº ${theNumber + 1}.`);
     </script>
 
+    <!-- ION-ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
