@@ -7,6 +7,13 @@ projects = [
         skills: ['Html', 'Sass', 'Scss', 'Javascript', 'Jquery', 'Responsive Web Design']
     },
     {
+        title: 'Carrito de compra',
+        img: 'imgs/cart.png',
+        url: 'https://wanderlust51.github.io/desafio1/',
+        description: 'Ejemplo de un carrito de compra en Angular.',
+        skills: ['Angular', 'Typescript', 'Scss']
+    },
+    {
         title: 'Prueba de Angular',
         img: 'imgs/mercadolibre.png',
         url: 'https://wanderlust51.github.io/desafio/',
