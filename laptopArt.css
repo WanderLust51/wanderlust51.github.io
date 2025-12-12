@@ -1,11 +1,12 @@
 #laptop{
 	height: 160px;
   	width: 220px;
-  	position: absolute;
+  	position: relative;
   	background-color: #c0c0c0;
   	border-radius: 8% 8% 10% 10%;
-  	margin-left: 50%;
-	top: 25vh;
+  	/*margin-left: 50%;
+	top: 25vh;*/
+	margin: 0 auto;
 }
   
 #laptop:before{

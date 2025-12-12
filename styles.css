@@ -46,7 +46,7 @@ body{
     margin: 0px;
     background-color: #100e1a;
     font-family: 'Lato', sans-serif;
-
+    overflow-x: hidden;
 }
 
 a{
@@ -58,16 +58,32 @@ a{
     display: flex;
     background-color: #19132a;
     height: 85vh;
-    justify-content: center;
+    justify-content:start;
     width: 100%;
     /* padding-bottom: 100px; */
     /* background-color: rgba(255, 255, 255, 0.171); */
 }
 #bannerContent{
-    width: 78%;
+    /*width: 78%;*/
     margin-top: 25vh;
+    margin-left: 15%;
     height: fit-content;
     /* background-color: rgba(255, 255, 255, 0.171); */
+    z-index: 2;
+}
+#picture{
+    display: flex;
+    position: absolute;
+    height: inherit;
+    background-color: rgba(128, 128, 128, 0.267);
+    background-image: url(imgs/pic.jpeg);
+    background-position-y: 6%;
+    background-position-x: 50%;
+    width:52%;
+    margin-left: auto;
+    right: -1cm;
+    transform:skewX(-5deg);
+    z-index: 1;
 }
 #social{
     display: flex;
@@ -111,9 +127,11 @@ a{
 
 }
 #bajaMasText{
+    position: relative;
     color: rgba(255, 255, 255, 0.185);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+    z-index: 2;
 }
 
 /* - - - - - - BANNER - - - - - - */
@@ -280,6 +298,11 @@ main{
         width: 100%;
         
     }
+    #picture{
+        transform: none;
+        width: 100%;
+        right: 0px;
+    }
     #title{
         display: block;
         width: 100%;
@@ -342,6 +365,7 @@ main{
     #bannerContent{
         margin-top: 15vh;
         width: 90%;
+        margin: auto 0;
     }
     #title{
         margin-bottom: 10vh;
