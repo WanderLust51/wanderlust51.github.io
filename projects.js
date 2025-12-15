@@ -20,18 +20,18 @@ projects = [
         description: 'Una simple práctica poniendo a prueba mis conocimientos del framework Angular, Angular Material y Typescript',
         skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
     },
+    {
+        title: 'Modelo predictivo de Regresión Lineal',
+        img: 'imgs/ml1.png',
+        url: 'https://colab.research.google.com/drive/1sP_PPuHY2zEwjbJbYc6cSfGukUhXabfp?usp=sharing',
+        description: 'Modelo predictivo que convierte grados Celcius a grados Fahrenheit',
+        skills: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib.pyplot'] 
+    },
 ]
 
 $(document).ready(function(){
 
-    //Picture adjustment
-    picHeight = $('#picture')[0].offsetHeight
-    pictureExtra = (Math.sqrt( ((picHeight**2)*Math.cos(85*Math.PI/180)**2)/(1+Math.cos(85*Math.PI/180)**2)) )
-    console.log(pictureExtra)
     
-    if (document.documentElement.clientWidth > 700){
-        $('#picture').css('right', `-${pictureExtra}px`)
-    }
 
     let projectCont = $('#project-container')
 

@@ -75,6 +75,8 @@ a{
     display: flex;
     position: absolute;
     height: inherit;
+    background-repeat:no-repeat;
+    /*background-size:cover;*/
     background-color: rgba(128, 128, 128, 0.267);
     background-image: url(imgs/pic.jpeg);
     background-position-y: 6%;
@@ -84,6 +86,7 @@ a{
     right: -1cm;
     transform:skewX(-5deg);
     z-index: 1;
+    filter: grayscale(0.5);
 }
 #social{
     display: flex;
@@ -293,15 +296,21 @@ main{
             padding: 0 1.75rem;
         }
     }
+    #banner{
+        justify-content: center;
+    }
     #bannerContent{
         display: block;
         width: 100%;
+        margin-left: 0;
         
     }
     #picture{
         transform: none;
         width: 100%;
         right: 0px;
+        filter:opacity(0.35);
+
     }
     #title{
         display: block;
@@ -359,13 +368,12 @@ main{
         margin-top: 4vh;
         margin-bottom: 8vh;
     }
-    #banner{
-        height: fit-content;
-    }
+    /*#banner{
+        height: 95vh;
+    }*/
     #bannerContent{
         margin-top: 15vh;
         width: 90%;
-        margin: auto 0;
     }
     #title{
         margin-bottom: 10vh;
@@ -395,5 +403,11 @@ main{
     }
     #bannerContent{
         width: 85%;
+    }
+}
+
+@media screen and (min-height: 1000px){
+    #picture{
+        background-size:cover
     }
 }
