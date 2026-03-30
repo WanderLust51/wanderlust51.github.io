@@ -10,7 +10,7 @@ projects = [
         title: 'Carrito de compra',
         img: 'imgs/cart.png',
         url: 'https://wanderlust51.github.io/desafio1/',
-        description: 'Ejemplo de un carrito de compra en Angular.',
+        description: 'Ejemplo de un carrito de compra en Angular',
         skills: ['Angular', 'Typescript', 'Scss']
     },
     {
@@ -19,6 +19,13 @@ projects = [
         url: 'https://wanderlust51.github.io/desafio/',
         description: 'Una simple práctica poniendo a prueba mis conocimientos del framework Angular, Angular Material y Typescript',
         skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
+    },
+    {
+        title: 'Simulador de partículas de lluvia',
+        img: 'imgs/rain.png',
+        url: 'https://github.com/WanderLust51/Purple-Rain',
+        description: 'Un simulador de lluvia natural, eficiente y realista. Haciendo uso de la programación orientada a objetos para manejar dinamicamente, de cada entidad, su tamaño, dirección y movimiento para dar una impresión auténtica',
+        skills: ['Python', 'Pygame', 'POO', 'Parallax design']
     },
     {
         title: 'Modelo predictivo de Regresión Lineal',
@@ -38,11 +45,19 @@ $(document).ready(function(){
     for (let i in projects){
 
         let projectDiv = document.createElement('div')
+        let previewDiv = document.createElement('div')
         let img = document.createElement('img')
         let caption = document.createElement('a')
         
         $(projectDiv).addClass('project')
+        $(previewDiv).addClass('preview')
 
+        // Preview
+        let previewH2 = document.createElement('h2')
+        previewH2.textContent = projects[i].title
+        $(previewDiv).append(previewH2)
+
+        // Caption
         $(caption).addClass('caption')
         let blur = document.createElement('div')
         let captionText = document.createElement('div')
@@ -68,6 +83,7 @@ $(document).ready(function(){
 
         $(img).attr('src', projects[i].img)
         $(projectDiv).append(img)
+        $(projectDiv).append(previewDiv)
         $(projectDiv).append(caption)
         $(projectCont).prepend(projectDiv)
     }
