@@ -21,6 +21,13 @@ projects = [
         skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
     },
     {
+        title: 'Snake',
+        img: 'imgs/snake.png',
+        url: 'https://github.com/WanderLust51/snake',
+        description: 'Juego clásico de snake hecho en pygame, utilizando las matrices para simular el espacio, la serpiente y el comportamiento de la misma. El juego se puede mostrar tanto en una ventana como en la terminal',
+        skills: ['Python', 'Pygame', 'POO']
+    },
+    {
         title: 'Simulador de partículas de lluvia',
         img: 'imgs/rain.png',
         url: 'https://github.com/WanderLust51/Purple-Rain',
