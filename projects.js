@@ -1,25 +1,49 @@
+// projects = [
+//     {
+//         title: 'Simple To-do list',
+//         img: 'imgs/todo.png',
+//         url: 'https://wanderlust51.github.io/to-do-List-1/',
+//         description: 'Una lista extremadamente simple para anotar tus tareas',
+//         skills: ['Html', 'Sass', 'Scss', 'Javascript', 'Jquery', 'Responsive Web Design']
+//     },
+//     {
+//         title: 'Carrito de compra',
+//         img: 'imgs/cart.png',
+//         url: 'https://wanderlust51.github.io/desafio1/',
+//         description: 'Ejemplo de un carrito de compra en Angular',
+//         skills: ['Angular', 'Typescript', 'Scss']
+//     },
+//     {
+//         title: 'Prueba de Angular',
+//         img: 'imgs/mercadolibre.png',
+//         url: 'https://wanderlust51.github.io/desafio/',
+//         description: 'Una simple práctica poniendo a prueba mis conocimientos del framework Angular, Angular Material y Typescript',
+//         skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
+//     },
+//     {
+//         title: 'Snake',
+//         img: 'imgs/snake.png',
+//         url: 'https://github.com/WanderLust51/snake',
+//         description: 'Juego clásico de snake hecho en pygame, utilizando las matrices para simular el espacio, la serpiente y el comportamiento de la misma. El juego se puede mostrar tanto en una ventana como en la terminal',
+//         skills: ['Python', 'Pygame', 'POO']
+//     },
+//     {
+//         title: 'Simulador de partículas de lluvia',
+//         img: 'imgs/rain.png',
+//         url: 'https://github.com/WanderLust51/Purple-Rain',
+//         description: 'Un simulador de lluvia natural, eficiente y realista. Haciendo uso de la programación orientada a objetos para manejar dinamicamente, de cada entidad, su tamaño, dirección y movimiento para dar una impresión auténtica',
+//         skills: ['Python', 'Pygame', 'POO', 'Parallax design']
+//     },
+//     {
+//         title: 'Modelo predictivo de Regresión Lineal',
+//         img: 'imgs/ml1.png',
+//         url: 'https://colab.research.google.com/drive/1sP_PPuHY2zEwjbJbYc6cSfGukUhXabfp?usp=sharing',
+//         description: 'Modelo predictivo que convierte grados Celcius a grados Fahrenheit',
+//         skills: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib.pyplot'] 
+//     },
+// ]
+
 projects = [
-    {
-        title: 'Simple To-do list',
-        img: 'imgs/todo.png',
-        url: 'https://wanderlust51.github.io/to-do-List-1/',
-        description: 'Una lista extremadamente simple para anotar tus tareas',
-        skills: ['Html', 'Sass', 'Scss', 'Javascript', 'Jquery', 'Responsive Web Design']
-    },
-    {
-        title: 'Carrito de compra',
-        img: 'imgs/cart.png',
-        url: 'https://wanderlust51.github.io/desafio1/',
-        description: 'Ejemplo de un carrito de compra en Angular',
-        skills: ['Angular', 'Typescript', 'Scss']
-    },
-    {
-        title: 'Prueba de Angular',
-        img: 'imgs/mercadolibre.png',
-        url: 'https://wanderlust51.github.io/desafio/',
-        description: 'Una simple práctica poniendo a prueba mis conocimientos del framework Angular, Angular Material y Typescript',
-        skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
-    },
     {
         title: 'Snake',
         img: 'imgs/snake.png',
@@ -41,6 +65,21 @@ projects = [
         description: 'Modelo predictivo que convierte grados Celcius a grados Fahrenheit',
         skills: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib.pyplot'] 
     },
+    {
+        title: 'Luval Store',
+        img: 'imgs/luvalstore1.png',
+        url: 'https://luval-store.vercel.app/',
+        description: 'Comercio digital moderno de remodelaciones con panel de administrador que maneja el 90% de la página, como artículos, categorías, contacto, diseños y proyectos y demás recursos que aparecen publicados.',
+        skills: ['Claude Code', 'Next.js', 'React', 'Supabase', 'Vercel'] 
+    },
+    {
+        title: 'Kibo Notes',
+        img: 'imgs/kibonotes1.png',
+        url: 'https://kibo-notes.vercel.app/',
+        description: 'App web sencilla para tomar notas especializado para entornos académicos',
+        skills: ['Claude Code', 'Next.js', 'React', 'Supabase', 'Vercel', 'PWA'] 
+    },
+
 ]
 
 $(document).ready(function(){
