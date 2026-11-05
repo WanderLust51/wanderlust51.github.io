@@ -92,17 +92,16 @@
     width: 170px;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 4px;
-    border-color: rgba(199, 199, 255, 0.6);
+    border-color: #fdff6b9f;   /* el amarillo neón: único en toda la página */
     border-width: 2px;
     border-style: solid;
     transition-duration: 0.3s;
 }
 
 .cvButton:hover{
-    color: var(--bg);
-    background-color: var(--accent);
+    background-color: #fbff0088;
     transition-duration: 0.3s;
-    box-shadow: 0 0 60px -5px rgba(199, 199, 255, 0.6);
+    box-shadow: 0 0 60px -5px #fbff006b;
 }
 
 

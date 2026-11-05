@@ -103,28 +103,42 @@ img{ max-width: 100%; }
     bottom: 0;
     right: -1cm;
     width: 52%;
+    max-width: 1000px;          /* en monitores anchos no se agranda de más */
+    overflow: hidden;           /* recorta la foto con la forma inclinada */
     background-color: rgba(128, 128, 128, 0.267);
+    transform: skewX(-5deg);    /* se inclina el contenedor... */
+    z-index: 1;
+}
+/* ...y la foto se inclina al revés, así queda derecha.
+   Se estira a los lados lo justo para cubrir las esquinas:
+   (altura / 2) · tan(5°) ≈ 0.044 · altura, y el banner mide ~85vh. */
+#picture .picture-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5vh;
+    right: -5vh;
     background-image: url(imgs/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 18%;
-    transform: skewX(-5deg);
-    filter: grayscale(0.15);
-    z-index: 1;
+    transform: skewX(5deg);
 }
 /* Tiñe el fondo gris del estudio con el morado de la página */
 #picture::before{
     content: "";
     position: absolute;
+    z-index: 1;
     inset: 0;
     background: #4a3a78;
     mix-blend-mode: multiply;
-    opacity: 0.55;
+    opacity: 0.3;
 }
 /* Funde el borde izquierdo de la foto con el morado del banner */
 #picture::after{
     content: "";
     position: absolute;
+    z-index: 2;
     inset: 0;
     background:
         linear-gradient(90deg, rgba(25, 19, 42, 0.7) 0%, rgba(25, 19, 42, 0) 30%),
@@ -347,6 +361,11 @@ section{ scroll-margin-top: 1rem; }
         right: 0 !important;
         bottom: auto;
         height: 62%;
+    }
+    #picture .picture-img{
+        left: 0;
+        right: 0;
+        transform: none;
         background-position: 50% 12%;
     }
     #picture::after{
