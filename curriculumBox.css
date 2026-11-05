@@ -4,7 +4,10 @@
     display: flex;
     height: 300px;
     width: 100%;
-    margin: 50px 0;
+    margin: 6rem auto 0;
+    max-width: 60rem;
+    box-sizing: border-box;
+    border-radius: var(--radius);
     align-items: center;
 
     border-style: solid;
@@ -43,6 +46,7 @@
     display: flex;
     height: 220px;
     width: 220px;
+    object-fit: cover;
     margin-left: 10%;
     border-radius: 50%
 }
@@ -56,7 +60,9 @@
 }
 
 #cvContentRight{
-    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #cvUnderline{
@@ -65,7 +71,7 @@
     color:white;
     margin-bottom: 40px;
     margin-top: 0;
-    font-weight: lighter;
+    font-weight: 300;
 
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -86,16 +92,17 @@
     width: 170px;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 4px;
-    border-color: #fdff6b9f;
+    border-color: rgba(199, 199, 255, 0.6);
     border-width: 2px;
     border-style: solid;
     transition-duration: 0.3s;
 }
 
 .cvButton:hover{
-    background-color: #fbff0088;
+    color: var(--bg);
+    background-color: var(--accent);
     transition-duration: 0.3s;
-    box-shadow: 0 0 60px -5px #fbff006b;
+    box-shadow: 0 0 60px -5px rgba(199, 199, 255, 0.6);
 }
 
 
@@ -111,15 +118,15 @@
     .neonBox{
         display: block;
         height: fit-content;
-        width: 80%;
-        margin: 0 6%;
+        width: 100%;
+        margin: 0;
         padding: 30px 0;
     }
     
     #neonContainer{
         display: flex;
         width: 100%;
-        margin: 120px 0;
+        margin: 5rem 0 0;
         justify-content: center;
     }
 
@@ -132,6 +139,10 @@
     .neonBox > div:first-child{
         width: 100%;
         margin: 20px 0;
+    }
+    #cvUnderline{
+        font-size: 32px;
+        text-align: center;
     }
     .neonBox #cvImg{
         margin: 0;

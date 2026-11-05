@@ -1,137 +1,124 @@
-// projects = [
-//     {
-//         title: 'Simple To-do list',
-//         img: 'imgs/todo.png',
-//         url: 'https://wanderlust51.github.io/to-do-List-1/',
-//         description: 'Una lista extremadamente simple para anotar tus tareas',
-//         skills: ['Html', 'Sass', 'Scss', 'Javascript', 'Jquery', 'Responsive Web Design']
-//     },
-//     {
-//         title: 'Carrito de compra',
-//         img: 'imgs/cart.png',
-//         url: 'https://wanderlust51.github.io/desafio1/',
-//         description: 'Ejemplo de un carrito de compra en Angular',
-//         skills: ['Angular', 'Typescript', 'Scss']
-//     },
-//     {
-//         title: 'Prueba de Angular',
-//         img: 'imgs/mercadolibre.png',
-//         url: 'https://wanderlust51.github.io/desafio/',
-//         description: 'Una simple práctica poniendo a prueba mis conocimientos del framework Angular, Angular Material y Typescript',
-//         skills: ['Angular', 'Angular-material', 'Typescript', 'Scss']
-//     },
-//     {
-//         title: 'Snake',
-//         img: 'imgs/snake.png',
-//         url: 'https://github.com/WanderLust51/snake',
-//         description: 'Juego clásico de snake hecho en pygame, utilizando las matrices para simular el espacio, la serpiente y el comportamiento de la misma. El juego se puede mostrar tanto en una ventana como en la terminal',
-//         skills: ['Python', 'Pygame', 'POO']
-//     },
-//     {
-//         title: 'Simulador de partículas de lluvia',
-//         img: 'imgs/rain.png',
-//         url: 'https://github.com/WanderLust51/Purple-Rain',
-//         description: 'Un simulador de lluvia natural, eficiente y realista. Haciendo uso de la programación orientada a objetos para manejar dinamicamente, de cada entidad, su tamaño, dirección y movimiento para dar una impresión auténtica',
-//         skills: ['Python', 'Pygame', 'POO', 'Parallax design']
-//     },
-//     {
-//         title: 'Modelo predictivo de Regresión Lineal',
-//         img: 'imgs/ml1.png',
-//         url: 'https://colab.research.google.com/drive/1sP_PPuHY2zEwjbJbYc6cSfGukUhXabfp?usp=sharing',
-//         description: 'Modelo predictivo que convierte grados Celcius a grados Fahrenheit',
-//         skills: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib.pyplot'] 
-//     },
-// ]
-
-projects = [
+// Lado A: proyectos reales (featured: true). Lado B: experimentos.
+// El orden del array es el orden en que aparecen en la página.
+const projects = [
     {
-        title: 'Snake',
-        img: 'imgs/snake.png',
-        url: 'https://github.com/WanderLust51/snake',
-        description: 'Juego clásico de snake hecho en pygame, utilizando las matrices para simular el espacio, la serpiente y el comportamiento de la misma. El juego se puede mostrar tanto en una ventana como en la terminal',
-        skills: ['Python', 'Pygame', 'POO']
+        featured: true,
+        title: 'Luval Store',
+        img: 'imgs/luvalstore1.png',
+        url: 'https://luval-store.vercel.app/',
+        tagline: 'Tienda digital de remodelaciones',
+        description: 'Comercio digital moderno de remodelaciones: pisos, revestimientos, griferías y muebles, además del diseño de cocinas y muebles a medida.',
+        highlights: [
+            'Panel de administrador que maneja el 90% de la página: artículos, categorías, contacto, diseños, proyectos y demás recursos publicados.',
+            'Pedidos que el cliente arma en la web y envía por WhatsApp, sin pagos en línea.',
+            'Catálogo organizado por departamentos.',
+        ],
+        skills: ['Next.js', 'React', 'Supabase', 'Vercel', 'Claude Code']
+    },
+    {
+        featured: true,
+        title: 'Kibo Notes',
+        img: 'imgs/kibonotes1.png',
+        url: 'https://kibo-notes.vercel.app/',
+        tagline: 'Tu libreta de clases',
+        description: 'App web sencilla para tomar notas, especializada para entornos académicos.',
+        highlights: [
+            'Apuntes rápidos en Markdown, organizados por materias y clases.',
+            'Las notas se guardan en tu propio dispositivo.',
+            'Instalable como app (PWA).',
+        ],
+        skills: ['Next.js', 'React', 'Supabase', 'Vercel', 'PWA', 'Claude Code']
     },
     {
         title: 'Simulador de partículas de lluvia',
         img: 'imgs/rain.png',
         url: 'https://github.com/WanderLust51/Purple-Rain',
-        description: 'Un simulador de lluvia natural, eficiente y realista. Haciendo uso de la programación orientada a objetos para manejar dinamicamente, de cada entidad, su tamaño, dirección y movimiento para dar una impresión auténtica',
+        description: 'Un simulador de lluvia natural, eficiente y realista. Usa programación orientada a objetos para manejar dinámicamente el tamaño, la dirección y el movimiento de cada gota y dar una impresión auténtica.',
         skills: ['Python', 'Pygame', 'POO', 'Parallax design']
+    },
+    {
+        title: 'Snake',
+        img: 'imgs/snake.png',
+        url: 'https://github.com/WanderLust51/snake',
+        description: 'Juego clásico de snake hecho en Pygame, usando matrices para simular el espacio, la serpiente y su comportamiento. Se puede jugar tanto en una ventana como en la terminal.',
+        skills: ['Python', 'Pygame', 'POO']
     },
     {
         title: 'Modelo predictivo de Regresión Lineal',
         img: 'imgs/ml1.png',
         url: 'https://colab.research.google.com/drive/1sP_PPuHY2zEwjbJbYc6cSfGukUhXabfp?usp=sharing',
-        description: 'Modelo predictivo que convierte grados Celcius a grados Fahrenheit',
-        skills: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib.pyplot'] 
+        description: 'Modelo predictivo que convierte grados Celsius a grados Fahrenheit.',
+        skills: ['Python', 'TensorFlow', 'Keras', 'NumPy', 'Pandas', 'Matplotlib']
     },
-    {
-        title: 'Luval Store',
-        img: 'imgs/luvalstore1.png',
-        url: 'https://luval-store.vercel.app/',
-        description: 'Comercio digital moderno de remodelaciones con panel de administrador que maneja el 90% de la página, como artículos, categorías, contacto, diseños y proyectos y demás recursos que aparecen publicados.',
-        skills: ['Claude Code', 'Next.js', 'React', 'Supabase', 'Vercel'] 
-    },
-    {
-        title: 'Kibo Notes',
-        img: 'imgs/kibonotes1.png',
-        url: 'https://kibo-notes.vercel.app/',
-        description: 'App web sencilla para tomar notas especializado para entornos académicos',
-        skills: ['Claude Code', 'Next.js', 'React', 'Supabase', 'Vercel', 'PWA'] 
-    },
-
 ]
+
+function chipList(skills){
+    let ul = $('<ul class="chips"></ul>')
+    for (let skill of skills){
+        ul.append($('<li class="chip"></li>').text(skill))
+    }
+    return ul
+}
+
+function trackNumber(n){
+    return String(n).padStart(2, '0')
+}
 
 $(document).ready(function(){
 
-    
-
+    let featuredCont = $('#featured-container')
     let projectCont = $('#project-container')
 
-    for (let i in projects){
+    projects.forEach(function(project, i){
+        let track = trackNumber(i + 1)
 
-        let projectDiv = document.createElement('div')
-        let previewDiv = document.createElement('div')
-        let img = document.createElement('img')
-        let caption = document.createElement('a')
-        
-        $(projectDiv).addClass('project')
-        $(previewDiv).addClass('preview')
+        if (project.featured){
+            let article = $('<article class="featured"></article>')
 
-        // Preview
-        let previewH2 = document.createElement('h2')
-        previewH2.textContent = projects[i].title
-        $(previewDiv).append(previewH2)
+            let media = $('<a class="featured-media" target="_blank" rel="noopener"></a>')
+                .attr('href', project.url)
+                .attr('aria-label', `Abrir ${project.title}`)
+                .append($('<img loading="lazy">').attr('src', project.img).attr('alt', `Captura de ${project.title}`))
 
-        // Caption
-        $(caption).addClass('caption')
-        let blur = document.createElement('div')
-        let captionText = document.createElement('div')
-        $(blur).addClass('blur')
-        $(captionText).addClass('caption-text')
+            let body = $('<div class="featured-body"></div>')
+            body.append($('<span class="track-num"></span>').text(`Pista ${track}`))
+            body.append($('<h3></h3>').text(project.title))
+            body.append($('<p class="featured-tagline"></p>').text(project.tagline))
+            body.append($('<p></p>').text(project.description))
 
-        let titleH1 = document.createElement('h1')
-        let descriptionP = document.createElement('p')
-        $(titleH1).text(projects[i].title)
-        $(descriptionP).text(projects[i].description)
-        
-        $(captionText).append(titleH1).append(descriptionP)
+            let ul = $('<ul class="highlights"></ul>')
+            for (let h of project.highlights){
+                ul.append($('<li></li>').text(h))
+            }
+            body.append(ul)
+            body.append(chipList(project.skills))
 
-        let span = document.createElement('span')
-        for (let skillIndex in projects[i].skills){
-            let chip = document.createElement('span')
-            $(chip).text(projects[i].skills[skillIndex]).addClass('chip')
-            $(span).append(chip)
+            let actions = $('<div class="featured-actions"></div>')
+            actions.append(
+                $('<a class="btn-live" target="_blank" rel="noopener"></a>')
+                    .attr('href', project.url)
+                    .text('Ver en vivo ↗')
+            )
+            body.append(actions)
+
+            article.append(media).append(body)
+            featuredCont.append(article)
+            return
         }
-        $(captionText).append(span)
 
-        $(caption).append(blur).append(captionText).attr('href', projects[i].url).attr('target', '_blank')
+        let card = $('<a class="project" target="_blank" rel="noopener"></a>').attr('href', project.url)
 
-        $(img).attr('src', projects[i].img)
-        $(projectDiv).append(img)
-        $(projectDiv).append(previewDiv)
-        $(projectDiv).append(caption)
-        $(projectCont).prepend(projectDiv)
-    }
+        let media = $('<div class="project-media"></div>')
+            .append($('<img>').attr('src', project.img).attr('alt', `Captura de ${project.title}`))
+
+        let body = $('<div class="project-body"></div>')
+        body.append($('<span class="track-num"></span>').text(`Pista ${track}`))
+        body.append($('<h3></h3>').text(project.title))
+        body.append($('<p></p>').text(project.description))
+        body.append(chipList(project.skills))
+
+        card.append(media).append(body)
+        projectCont.append(card)
+    })
 
 })

@@ -1,107 +1,98 @@
 footer{
-    display: block;
-    height: 500px;
-    width: 100%;
-    background-color: #19132a;
-    font-family: 'Lato', sans-serif;
-    padding-top: 50px;
+    background-color: var(--bg-raised);
+    border-top: 1px solid var(--line);
+    padding: 5rem var(--gutter) 2rem;
 }
 
-.contentFooter{
-    display: flex;
-    justify-content:left;
-    padding-left: 10%;
-    padding-right: 7%;
-    padding-bottom: 60px;
+.footer-inner{
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 .textSubTitleFooter{
-    color: #effbee;
+    margin: 0.5rem 0 1rem;
+    color: var(--text);
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 900;
+}
+
+.footer-intro{
+    max-width: 34rem;
+    margin: 0 0 2rem;
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.mail-link{
+    display: inline-block;
+    font-size: clamp(1.25rem, 3.5vw, 2rem);
+    font-weight: 300;
+    color: var(--accent);
+    border-bottom: 2px solid rgba(199, 199, 255, 0.4);
+    padding-bottom: 0.25rem;
+    overflow-wrap: anywhere;
+    transition: border-color 0.25s, text-shadow 0.25s;
+}
+.mail-link:hover{
+    border-color: var(--accent);
+    text-shadow: 0 0 30px rgba(199, 199, 255, 0.6);
+}
+
+.footer-links{
     display: flex;
-    font-size: 35px;
-    font-family: 'Lato', sans-serif;
-    justify-content: left;
-    text-align: start;
-
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #effbee;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    list-style: none;
 }
+.footer-links a{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+.footer-links a:hover{
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+}
+.footer-links ion-icon{ font-size: 1.15rem; }
 
-.contentFooter p, .contentFooter a{
-    color: #effbee;
+.footer-bottom{
     display: flex;
-    font-size: 25px;
-    margin: 50px 0;
-    /* padding-bottom: 30px; */
-    /* padding-left: 2%; */
-    font-weight: lighter;
-    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
+.footer-bottom p{ margin: 0; }
 
-.contentFooterLeft{
-    width: 360px;
-    display: block;
-    margin-right: 3%;
+.gotoTop{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    font-size: 22px;
+    color: var(--text);
+    border: 2px solid var(--text);
+    border-radius: 50%;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
-
-.contentFooterRight{
-    width: 100%;
-    display: block;
-    margin-right: 2%;
-}
-
-#linkedinLink{
-    text-decoration: none;
-    color: rgb(199, 199, 255);;
-}
-
-#linkedinText{
-    transition-duration: 0.3s;
-}
-
-#linkedinText:hover{
-    color: #c7c7ffda;
-    transition-duration: 0.3s;
-}
-
-/* - - - - -RESPONSIVE - - - - - - -*/
-/* - - - - - RESPONSIVE - - - - - - */
-/* - - - - - -RESPONSIVE - - - - - -*/
-/* - - - - - - RESPONSIVE - - - - - */
-/* - - - - - - -RESPONSIVE - - - - -*/
-/* - - - - - - - RESPONSIVE - - - - */
-
-#fcontent2{
-    display: none;
-}
-@media screen and (max-width: 600px){
-    footer{
-        height: fit-content;
-    }
-    #contactMeSection{
-        padding-bottom: 20px;
-    }
-    #fcontent1{
-        display: none;
-    }
-    #fcontent2{
-        display: block;
-    }
-    .contentFooter p, .contentFooter a{
-        color: #effbee;
-        display: flex;
-        font-size: 20px;
-        margin: 10px 0;
-        font-weight: lighter;
-        text-align: left;
-    }
-    .contentFooter > div{
-        margin: 40px 0;
-    }
-    .contentFooter > div > *:last-child{
-        margin-left: 20px;
-    }
+.gotoTop:hover{
+    background-color: #c7c7ff1a;
+    border-color: #c7c7ffde;
+    box-shadow: 0 0 60px -10px #c7c7ffda;
 }

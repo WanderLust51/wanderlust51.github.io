@@ -131,8 +131,8 @@
 	visibility: initial;
 }
 
-@media screen and (max-width: 860px){
-	#laptop{
-		margin-left: 60%;
-	}
+#screenOn:active{
+	background-color: #effbee;
+	color: rgba(0, 0, 0, 0.308);
+	box-shadow: 0 0 500px 30px rgba(255, 255, 255, 0.856);
 }
