@@ -78,21 +78,73 @@ footer{
 }
 .footer-bottom p{ margin: 0; }
 
+/* - - - El vinilo: volver arriba - - - */
 .gotoTop{
     display: flex;
     flex-shrink: 0;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
-    font-size: 22px;
-    color: var(--text);
-    border: 2px solid var(--text);
-    border-radius: 50%;
-    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    gap: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
 }
-.gotoTop:hover{
-    background-color: #c7c7ff1a;
-    border-color: #c7c7ffde;
-    box-shadow: 0 0 60px -10px #c7c7ffda;
+.gotoTop:hover{ color: var(--accent); }
+
+.vinyl{
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, transparent 0 4px, transparent 4px),
+        repeating-radial-gradient(circle, #121018 0 1.5px, #1d1a27 1.5px 3px);
+    box-shadow:
+        0 0 0 2px #0b0a10,
+        0 6px 18px rgba(0, 0, 0, 0.5);
+    animation: spin 3.6s linear infinite;
+    transition: box-shadow 0.3s;
+}
+/* Brillo de la luz sobre los surcos */
+.vinyl::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(from 20deg,
+        transparent 0deg, rgba(199, 199, 255, 0.16) 30deg, transparent 60deg,
+        transparent 180deg, rgba(199, 199, 255, 0.12) 210deg, transparent 240deg);
+}
+/* Etiqueta central */
+.vinyl::after{
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, #100e1a 0 2px, transparent 2.5px),
+        conic-gradient(var(--accent) 0 50%, #a9a9f0 50% 100%);
+}
+.gotoTop:hover .vinyl{
+    animation-duration: 1.2s;
+    box-shadow:
+        0 0 0 2px #0b0a10,
+        0 0 50px -6px rgba(199, 199, 255, 0.7);
+}
+/* Scratch: al hacer clic el disco va y viene antes de subir */
+.gotoTop.scratching .vinyl{
+    animation: scratch 0.45s ease-in-out;
+}
+
+@keyframes spin{
+    to { transform: rotate(360deg); }
+}
+@keyframes scratch{
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-70deg); }
+    50%  { transform: rotate(20deg); }
+    75%  { transform: rotate(-50deg); }
+    100% { transform: rotate(0deg); }
 }

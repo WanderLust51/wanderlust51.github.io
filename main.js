@@ -9,6 +9,18 @@ $(document).ready(function(){
     }
 
     purpleRain()
+
+    // El vinilo: un scratch y de vuelta al inicio
+    $('.gotoTop').on('click', function(e){
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+        e.preventDefault()
+        const link = $(this)
+        link.addClass('scratching')
+        setTimeout(function(){
+            link.removeClass('scratching')
+            document.getElementById('banner').scrollIntoView({ behavior: 'smooth' })
+        }, 450)
+    })
 })
 
 

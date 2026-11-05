@@ -104,20 +104,31 @@ img{ max-width: 100%; }
     right: -1cm;
     width: 52%;
     background-color: rgba(128, 128, 128, 0.267);
-    background-image: url(imgs/pic.jpeg);
+    background-image: url(imgs/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 45% 25%;
+    background-position: 50% 18%;
     transform: skewX(-5deg);
-    filter: grayscale(0.3);
+    filter: grayscale(0.15);
     z-index: 1;
+}
+/* Tiñe el fondo gris del estudio con el morado de la página */
+#picture::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #4a3a78;
+    mix-blend-mode: multiply;
+    opacity: 0.55;
 }
 /* Funde el borde izquierdo de la foto con el morado del banner */
 #picture::after{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(25, 19, 42, 0.55) 0%, rgba(25, 19, 42, 0) 35%);
+    background:
+        linear-gradient(90deg, rgba(25, 19, 42, 0.7) 0%, rgba(25, 19, 42, 0) 30%),
+        linear-gradient(0deg, rgba(25, 19, 42, 0.6) 0%, rgba(25, 19, 42, 0) 25%);
 }
 
 #title .track-label{ margin: 0 0 1rem; }
@@ -329,13 +340,19 @@ section{ scroll-margin-top: 1rem; }
         padding: 5rem 16px 4rem;
         text-align: center;
     }
+    /* En móvil la foto va arriba y se funde con el morado hacia el texto */
     #picture{
         transform: none;
         width: 100%;
         right: 0 !important;
-        filter: grayscale(0.3) opacity(0.3);
+        bottom: auto;
+        height: 62%;
+        background-position: 50% 12%;
     }
-    #picture::after{ display: none; }
+    #picture::after{
+        background: linear-gradient(0deg, #19132a 0%, rgba(25, 19, 42, 0.6) 30%, rgba(25, 19, 42, 0) 60%);
+    }
+    #bannerContent{ padding-top: 44svh; }
 
     #bannerRole{
         display: block;
